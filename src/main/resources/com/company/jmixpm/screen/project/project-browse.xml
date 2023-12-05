@@ -44,6 +44,10 @@
                 <action id="create" type="create"/>
                 <action id="edit" type="edit"/>
                 <action id="remove" type="remove"/>
+                <action id="showTasks"
+                        icon="LIST"
+                        caption="msg://showTasks.caption"
+                        type="itemTracking"/>
             </actions>
             <columns>
                 <column id="name"/>
@@ -57,6 +61,7 @@
                 <button id="createBtn" action="projectsTable.create"/>
                 <button id="editBtn" action="projectsTable.edit"/>
                 <button id="removeBtn" action="projectsTable.remove"/>
+                <button id="projectsTableShowTasksBtn" action="projectsTable.showTasks"/>
             </buttonsPanel>
         </groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">
